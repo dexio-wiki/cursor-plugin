@@ -1,0 +1,30 @@
+name: sync skills
+on:
+  schedule:
+    - cron: "17 14 * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: dexio-wiki/llm-wiki-skills
+          path: upstream
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - id: sync
+        run: echo "result=$(python scripts/sync_skills.py upstream)" >> "$GITHUB_OUTPUT"
+      - if: steps.sync.outputs.result == 'changed'
+        run: |
+          rm -rf upstream
+          python scripts/check_plugin.py
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A skills .skills-upstream
+          git commit -m "Sync skills from dexio-wiki/llm-wiki-skills@$(cut -c1-7 .skills-upstream)"
+          git push

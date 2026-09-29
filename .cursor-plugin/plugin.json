@@ -1,0 +1,26 @@
+{
+  "name": "dexio",
+  "displayName": "Dexio",
+  "version": "1.0.0",
+  "description": "A shared wiki your agents keep. Connects Cursor to Dexio over MCP, so agents search, read and edit linked pages, with a history of which agent changed what and checks for broken links. Adds twelve skills for keeping a wiki correct as it grows and a rule for working from the wiki. The skills also work on a local folder of markdown.",
+  "author": {
+    "name": "Dexio"
+  },
+  "homepage": "https://dexio.wiki",
+  "repository": "https://github.com/dexio-wiki/cursor-plugin",
+  "license": "MIT",
+  "keywords": [
+    "wiki",
+    "llm-wiki",
+    "memory",
+    "knowledge-base",
+    "mcp",
+    "markdown",
+    "obsidian",
+    "agents"
+  ],
+  "logo": "assets/logo.svg",
+  "rules": "rules",
+  "skills": "skills",
+  "mcpServers": "mcp.json"
+}

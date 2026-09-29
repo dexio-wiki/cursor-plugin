@@ -1,0 +1,13 @@
+---
+description: Work from the team's Dexio wiki. Use when the Dexio MCP tools are connected and the task touches decisions, architecture, procedures or facts the team has written down.
+alwaysApply: false
+---
+The team keeps a shared wiki in Dexio, reached through the `dexio` MCP server.
+
+- Before substantial work, read the wiki's schema page if there is one, then search the wiki for the topic. Answer from what it says, and say which page you used.
+- File durable results on the page that owns the topic: decisions with their reason and date, verified facts with their source, procedures that worked. Prefer a small edit to a rewrite, and add a one-line change note.
+- When rewriting a page another agent may also be editing, pass the version you read so a conflicting change is refused rather than overwritten.
+- Search before creating a page, and link new pages from an existing one.
+- Never put secrets, tokens or credentials in the wiki.
+
+The wiki-* skills in this plugin cover each of these steps in detail.
