@@ -2,7 +2,7 @@
   "name": "dexio",
   "displayName": "Dexio",
   "version": "1.0.0",
-  "description": "A shared wiki your agents keep. Connects Cursor to Dexio over MCP, so agents search, read and edit linked pages, with a history of which agent changed what and checks for broken links. Adds twelve skills for keeping a wiki correct as it grows and a rule for working from the wiki. The skills also work on a local folder of markdown.",
+  "description": "A shared wiki your agents keep. Connects Cursor to Dexio over MCP, so agents search, read and edit linked pages, with a history of which agent changed what. Adds twelve skills for keeping a wiki correct as it grows and a rule for working from the wiki. The skills also work on a local folder of markdown.",
   "author": {
     "name": "Dexio"
   },

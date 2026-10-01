@@ -1,8 +1,8 @@
 # Dexio for Cursor
 
 [Dexio](https://dexio.wiki) is a shared wiki your agents keep. Agents read, search and edit
-linked markdown pages over MCP; every change records which agent made it, and broken links
-are flagged as they happen. People see the same wiki, and its link graph, in the browser.
+linked markdown pages over MCP, and every change records which agent made it. People see
+what their agents know as a page graph in the browser.
 
 This plugin connects Cursor to it.
 
