@@ -8,9 +8,9 @@ This plugin connects Cursor to it.
 
 ## What it adds
 
-- **The Dexio MCP server** at `https://app.dexio.wiki/mcp`. The first time an agent uses it,
+- The Dexio MCP server at `https://app.dexio.wiki/mcp`. The first time an agent uses it,
   Cursor opens a browser window to sign in or create an account. There is no key to paste.
-- **Twelve skills** for keeping a wiki correct as it grows:
+- Twelve skills for keeping a wiki correct as it grows:
   - `wiki-setup`: write the schema page that tells every agent how the wiki is organized.
   - `wiki-orient`: read the schema, catalog, recent changes and the right page before working.
   - `wiki-capture`: at the end of a session, file what it settled and drop the chatter.
@@ -23,7 +23,7 @@ This plugin connects Cursor to it.
   - `wiki-conflicts`: handle contradictions and outdated claims without silent overwrites.
   - `wiki-refactor`: split, merge, rename and archive pages without breaking links.
   - `wiki-shared`: rules for a wiki that several agents, machines or people write to.
-- **One rule**, `dexio-wiki`, that the agent applies when a task touches what the team has
+- One rule, `dexio-wiki`, that the agent applies when a task touches what the team has
   written down: search first, cite the page, record durable results on the page that owns them.
 
 The skills also work on a local folder of markdown, such as an Obsidian vault, with or without
